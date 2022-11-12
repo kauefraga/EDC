@@ -1,11 +1,18 @@
-:: https://github.com/kauefraga/EDC
+::   /$$   /$$ /$$$$$$$$
+::  | $$  /$$/| $$_____/
+::  | $$ /$$/ | $$
+::  | $$$$$/  | $$$$$
+::  | $$  $$  | $$__/
+::  | $$\  $$ | $$
+::  | $$ \  $$| $$      Author: Kauê Fraga Rodrigues
+::  |__/  \__/|__/      github.com/kauefraga/edc
 :: BE AWARE OF YOUR ACTIONS!
 
 @echo off
 color 2
 cls
 
-echo Getting IP Address...
+echo [ana] Getting IP Address...
 
 curl -s "https://api.ipify.org?format=json" >> ..\net-logs.json
 curl -s "https://api.ipify.org"
