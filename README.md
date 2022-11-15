@@ -30,11 +30,13 @@ git clone https://github.com/kauefraga/edc.git
 cd edc
 
 # dependencies
-pip install cryptography
+pip install -r requirements.txt
 ```
 
 ## ✨ Features
 
+- **CLIs**
+  - [ana.py](https://github.com/kauefraga/EDC/tree/main/clis/ana.py) - A central with some nice operations
 - **Net Tools**
   - [get-ip.bat](https://github.com/kauefraga/EDC/tree/main/nettools/get-ip.bat) - Get IP address of current device
   - [get-ip.ps1](https://github.com/kauefraga/EDC/tree/main/nettools/get-ip.ps1) - The same as above but with pwsh (.ps1)
