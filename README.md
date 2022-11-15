@@ -43,9 +43,9 @@ pip install cryptography
   - [recursive-dirs.bat](https://github.com/kauefraga/EDC/tree/main/trolls/recursive-dirs.bat) - Create a directory that contains another directory that...
   - [spam-box-messages.bat](https://github.com/kauefraga/EDC/tree/main/trolls/spam-box-messages.bat) - Create a lot of box messages on screen
 - **Utils**
-  - [decrypt.py](https://github.com/kauefraga/EDC/tree/main/utils/decrypt.py)
-  - [encrypt-files.py](https://github.com/kauefraga/EDC/tree/main/utils/encrypt-files.py)
-  - [win-setup.ps1](https://github.com/kauefraga/EDC/tree/main/utils/win-setup.ps1)
+  - [encrypt-files.py](https://github.com/kauefraga/EDC/tree/main/utils/encrypt-files.py) - Encrypt files like a ransomware
+  - [decrypt.py](https://github.com/kauefraga/EDC/tree/main/utils/decrypt.py) - Decrypt files encrypted
+  - [win-setup.ps1](https://github.com/kauefraga/EDC/tree/main/utils/win-setup.ps1) - Script to set up my workspace
 
 ## 💻 Technologies
 
