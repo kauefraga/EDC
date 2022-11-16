@@ -23,9 +23,9 @@ def main():
 
   answer = anain('Which tool do you want to run? ')
 
-  data, exit = handler(answer)
+  data = handler(answer)
 
-  if exit:
+  if not data:
     sys.exit(0)
 
   anaout(data)
