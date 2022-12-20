@@ -1,9 +1,14 @@
-import requests, validators
+import requests, validators, socket
 
-def get_ip():
-  ip = requests.get('https://api.ipify.org').text
+def get_public_ip():
+  publicIp = requests.get('https://api.ipify.org').text
 
-  return 'Ip: {}'.format(ip)
+  return 'Public IP: {}'.format(publicIp)
+
+def get_local_ip():
+  localIp = socket.gethostbyname(socket.gethostname())
+
+  return 'Local IP: {}'.format(localIp)
 
 def get_response(url: str):
   if not validators.url(url):
