@@ -25,9 +25,6 @@ def main():
 
   data = handler(answer)
 
-  if not data:
-    sys.exit(0)
-
   anaout(data)
 
 if __name__ == '__main__':
