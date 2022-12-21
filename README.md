@@ -53,6 +53,9 @@ pip install -r requirements.txt
 
 - 🐍 [Python](https://www.python.org)
   - 🔐 [Cryptography](https://pypi.org/project/cryptography)
+  - 🎨 [Colorama](https://pypi.org/project/colorama)
+  - 🌐 [Requests](https://pypi.org/project/requests)
+  - 👩‍✈️ [Validators](https://pypi.org/project/validators)
 - ❄ [Powershell](https://learn.microsoft.com/en-us/powershell)
 - 🦇 [DOS aka bat file](https://github.com/microsoft/MS-DOS)
 
