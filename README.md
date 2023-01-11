@@ -35,8 +35,6 @@ pip install -r requirements.txt
 
 ## ✨ Features
 
-- **CLIs**
-  - [ana.py](https://github.com/kauefraga/EDC/tree/main/clis/ana.py) - A central with some nice operations
 - **Net Tools**
   - [get-ip.bat](https://github.com/kauefraga/EDC/tree/main/nettools/get-ip.bat) - Get IP address of current device
   - [get-ip.ps1](https://github.com/kauefraga/EDC/tree/main/nettools/get-ip.ps1) - The same as above but with pwsh (.ps1)
@@ -53,9 +51,6 @@ pip install -r requirements.txt
 
 - 🐍 [Python](https://www.python.org)
   - 🔐 [Cryptography](https://pypi.org/project/cryptography)
-  - 🎨 [Colorama](https://pypi.org/project/colorama)
-  - 🌐 [Requests](https://pypi.org/project/requests)
-  - 👩‍✈️ [Validators](https://pypi.org/project/validators)
 - ❄ [Powershell](https://learn.microsoft.com/en-us/powershell)
 - 🦇 [DOS aka bat file](https://github.com/microsoft/MS-DOS)
 
