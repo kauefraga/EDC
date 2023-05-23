@@ -2,7 +2,7 @@
 # screen 1366x768
 import pyautogui
 import keyboard
-from datetime import datetime
+from utils.datetime import now
 from numpy.random import uniform
 
 def click(x: int, y: int):
@@ -15,8 +15,7 @@ def click(x: int, y: int):
   pyautogui.mouseUp()
 
 def main():
-  # Alert people that the program is running
-  print(f'[script] The program is running... - {datetime.now().time()}')
+  print(f'[script] The program is running... - {now()}')
 
   while keyboard.is_pressed('q') != True:
     # Get offline rewards
@@ -40,8 +39,7 @@ def main():
     # Jump and shoot with bow
     click(650, 380)
 
-  # Alert that the program finished
-  print(f'[script] The program has finished - {datetime.now().time()}')
+  print(f'[script] The program has finished - {now()}')
 
 if __name__ == '__main__':
   # Settings
