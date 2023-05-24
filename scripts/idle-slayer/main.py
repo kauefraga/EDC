@@ -3,6 +3,7 @@
 import pyautogui
 import keyboard
 import time
+from colorama import just_fix_windows_console, Fore, Style
 from utils.datetime import now
 from numpy.random import uniform
 
@@ -42,15 +43,16 @@ def main():
     click(650, 380)
 
   print(f'[script] The program has finished - {now()}')
-  print('---------------------------------------------')
+  print(Fore.LIGHTBLACK_EX + '---------------------------------------------' + Style.RESET_ALL)
 
 
 if __name__ == '__main__':
   # Settings
   pyautogui.PAUSE = 0.1 # delay after all the commands
+  just_fix_windows_console() # colorama
 
   initial_time = time.time()
 
   main()
 
-  print(f'Time running: {round(time.time() - initial_time, 3)}s')
+  print(f'Time running: {Fore.GREEN}{round(time.time() - initial_time, 3)}s')
