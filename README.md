@@ -1,27 +1,47 @@
-<h1 align="center">Every Day Carry (EDC)</h1>
+<div align="center">
+  <h1>Every Day Carry (EDC)</h1>
 
-<p align="center">
-  <img
-    alt="GitHub top language"
-    src="https://img.shields.io/github/languages/top/kauefraga/edc.svg"
-  />
-  <img
-    alt="Repository size"
-    src="https://img.shields.io/github/repo-size/kauefraga/edc.svg"
-  />
-  <a href="https://github.com/kauefraga/edc/commits/main">
+  <p>
+    <strong>🔥 Scripts for windows - Be aware of your actions! 🔥</strong>
+  </p>
+
+  <p>
     <img
-      alt="GitHub last commit"
-      src="https://img.shields.io/github/last-commit/kauefraga/edc.svg"
+      alt="GitHub top language"
+      src="https://img.shields.io/github/languages/top/kauefraga/edc.svg"
     />
-  </a>
-  <img
-    alt="GitHub LICENSE"
-    src="https://img.shields.io/github/license/kauefraga/edc.svg"
-  />
-</p>
+    <img
+      alt="Repository size"
+      src="https://img.shields.io/github/repo-size/kauefraga/edc.svg"
+    />
+    <a href="https://github.com/kauefraga/edc/commits/main">
+      <img
+        alt="GitHub last commit"
+        src="https://img.shields.io/github/last-commit/kauefraga/edc.svg"
+      />
+    </a>
+    <img
+      alt="GitHub LICENSE"
+      src="https://img.shields.io/github/license/kauefraga/edc.svg"
+    />
+  </p>
+</div>
 
-<h4 align="center">🔥 Scripts for windows - Be aware of your actions! 🔥</h4>
+## ✨ Features
+
+- **Scripts**
+  - [idle slayer](scripts/idle-slayer) - Play away from keyboard.
+- **Net Tools**
+  - [get-ip.bat](https://github.com/kauefraga/EDC/tree/main/nettools/get-ip.bat) - Get IP address of current device.
+  - [get-ip.ps1](https://github.com/kauefraga/EDC/tree/main/nettools/get-ip.ps1) - The same as above but with pwsh.
+- **Trolls**
+  - [infinite-dirs.bat](https://github.com/kauefraga/EDC/tree/main/trolls/infinite-dirs.bat) - Create infinite directories at current directory.
+  - [recursive-dirs.bat](https://github.com/kauefraga/EDC/tree/main/trolls/recursive-dirs.bat) - Create a directory that contains another directory that...
+  - [spam-box-messages.bat](https://github.com/kauefraga/EDC/tree/main/trolls/spam-box-messages.bat) - Create a lot of box messages on screen.
+- **Utils**
+  - [encrypt-files.py](https://github.com/kauefraga/EDC/tree/main/utils/encrypt-files.py) - Encrypt files like a ransomware.
+  - [decrypt.py](https://github.com/kauefraga/EDC/tree/main/utils/decrypt.py) - Decrypt files encrypted.
+  - [win-setup.ps1](https://github.com/kauefraga/EDC/tree/main/utils/win-setup.ps1) - Script to set up my workspace.
 
 ## ⬇️ How to prepare to run the scripts
 
@@ -32,20 +52,6 @@ cd edc
 # dependencies
 pip install -r requirements.txt
 ```
-
-## ✨ Features
-
-- **Net Tools**
-  - [get-ip.bat](https://github.com/kauefraga/EDC/tree/main/nettools/get-ip.bat) - Get IP address of current device
-  - [get-ip.ps1](https://github.com/kauefraga/EDC/tree/main/nettools/get-ip.ps1) - The same as above but with pwsh (.ps1)
-- **Trolls**
-  - [infinite-dirs.bat](https://github.com/kauefraga/EDC/tree/main/trolls/infinite-dirs.bat) - Create infinite directories at current directory
-  - [recursive-dirs.bat](https://github.com/kauefraga/EDC/tree/main/trolls/recursive-dirs.bat) - Create a directory that contains another directory that...
-  - [spam-box-messages.bat](https://github.com/kauefraga/EDC/tree/main/trolls/spam-box-messages.bat) - Create a lot of box messages on screen
-- **Utils**
-  - [encrypt-files.py](https://github.com/kauefraga/EDC/tree/main/utils/encrypt-files.py) - Encrypt files like a ransomware
-  - [decrypt.py](https://github.com/kauefraga/EDC/tree/main/utils/decrypt.py) - Decrypt files encrypted
-  - [win-setup.ps1](https://github.com/kauefraga/EDC/tree/main/utils/win-setup.ps1) - Script to set up my workspace
 
 ## 💻 Technologies
 
