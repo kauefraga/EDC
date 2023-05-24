@@ -2,8 +2,10 @@
 # screen 1366x768
 import pyautogui
 import keyboard
+import time
 from utils.datetime import now
 from numpy.random import uniform
+
 
 def click(x: int, y: int):
   pyautogui.mouseDown(
@@ -40,16 +42,15 @@ def main():
     click(650, 380)
 
   print(f'[script] The program has finished - {now()}')
+  print('---------------------------------------------')
+
 
 if __name__ == '__main__':
   # Settings
   pyautogui.PAUSE = 0.1 # delay after all the commands
 
+  initial_time = time.time()
+
   main()
 
-"""
-1. if some key is pressed, open the ascension menu and then:
-  1.1. check the "vassalos" menu
-  1.2. ascend
-2. log the main information
-"""
+  print(f'Time running: {round(time.time() - initial_time, 3)}s')
