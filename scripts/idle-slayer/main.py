@@ -4,7 +4,7 @@ import pyautogui
 import keyboard
 import time
 from colorama import just_fix_windows_console, Fore, Style
-from utils.datetime import now
+from utils.datetime import get_time_and_datetime
 from numpy.random import uniform
 
 
@@ -17,8 +17,16 @@ def click(x: int, y: int):
   pyautogui.sleep(uniform(0.1, 0.3))
   pyautogui.mouseUp()
 
+def screenshot(filename: str):
+  pyautogui.screenshot(f'{filename}.png')
+
 def main():
-  print(f'[script] The program is running... - {now()}')
+  initial_time, initial_datetime = get_time_and_datetime()
+
+  print('[script] The program is running... -', initial_time)
+
+  print('[script] Taking screenshot...')
+  screenshot(initial_datetime) # hour.minute-day.month.year
 
   while keyboard.is_pressed('q') != True:
     # Get offline rewards
@@ -42,7 +50,13 @@ def main():
     # Jump and shoot with bow
     click(650, 380)
 
-  print(f'[script] The program has finished - {now()}')
+  end_time, end_datetime = get_time_and_datetime()
+
+  print('[script] Another screenshot...')
+  screenshot(end_datetime)
+  print('[script] Done! Your screenshots are available at .')
+
+  print('[script] The program has finished -', end_time)
   print(Fore.LIGHTBLACK_EX + '---------------------------------------------' + Style.RESET_ALL)
 
 
