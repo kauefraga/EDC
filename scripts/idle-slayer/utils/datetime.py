@@ -1,7 +1,13 @@
 from datetime import datetime
 
-def now():
-  """A function that formats the datetime native module and returns time"""
-  now = datetime.now().time()
+def get_time_and_datetime():
+  """Returns the current time and datetime formatted with strftime.
+    @example ['12:30:50', '12.30-15.5.2023']
+    @returns [time, datetime]
+  """
+  now = datetime.now()
 
-  return f'{now.hour}:{now.minute}:{now.second}'
+  return [
+    now.strftime('%H:%M:%S'),
+    now.strftime('%H.%M-%d.%m.%Y')
+  ]
