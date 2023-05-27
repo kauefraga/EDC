@@ -8,6 +8,7 @@
 - Run it, leave it alone and when you back to it, know exactly for how long it runs.
 - Currently it's sprinting, jumping, shooting, verifying if there's a portal to use (then using if there is).
 - Obtain the offline rewards if there are.
+- Capture the screen and know exactly how much coins you had at the beginning.
 
 ## 🎲 Prerequisites
 
@@ -42,8 +43,6 @@ The following packages have been used to build the script:
 
 ## 📜 Coming soon
 
-- Give it some colors
-- Log important information, such as actual coins, coins per second, kill points, etc.
 - If some key is pressed, open the ascension menu and then ascend (you can also check the vassals menu)
 
 ---
