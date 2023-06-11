@@ -4,8 +4,9 @@ import pyautogui
 import keyboard
 import time
 from colorama import just_fix_windows_console, Fore, Style
-from utils.datetime import get_time_and_datetime
 from numpy.random import uniform
+from utils.datetime import get_time_and_datetime
+from utils.counter import counter
 
 
 def click(x: int, y: int):
@@ -36,13 +37,13 @@ def main():
       pyautogui.sleep(uniform(0.1, 0.3))
 
     # Check if the portal is available
-    if pyautogui.pixel(1240, 90)[2] == 153:
-      # click in the portal icon
-      pyautogui.click(1240, 90)
-      pyautogui.sleep(uniform(0.1, 0.3))
-      # press "yes"
-      pyautogui.click(580, 590)
-      pyautogui.sleep(uniform(0.5, 1))
+    # if pyautogui.pixel(1240, 90)[2] == 153:
+    #   # click in the portal icon
+    #   pyautogui.click(1240, 90)
+    #   pyautogui.sleep(uniform(0.1, 0.3))
+    #   # press "yes"
+    #   pyautogui.click(580, 590)
+    #   pyautogui.sleep(uniform(0.5, 1))
 
     # Sprint
     if pyautogui.pixel(100, 630)[2] == 155:
@@ -50,6 +51,7 @@ def main():
 
     # Jump and shoot with bow
     click(650, 380)
+    counter.add_counter()
 
   end_time, end_datetime = get_time_and_datetime()
 
@@ -57,6 +59,7 @@ def main():
   screenshot(end_datetime)
   print('[script] Done! Your screenshots are available at .')
 
+  print(f'[script] Totally, you jump/shoot {Fore.RED}{counter.count}{Style.RESET_ALL} times')
   print('[script] The program has finished -', end_time)
   print(Fore.LIGHTBLACK_EX + '---------------------------------------------' + Style.RESET_ALL)
   print(f'Time running: {Fore.GREEN}{round(time.time() - initial_execution_time, 3)}s')
