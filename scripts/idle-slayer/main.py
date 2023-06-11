@@ -5,18 +5,10 @@ import keyboard
 import time
 from colorama import just_fix_windows_console, Fore, Style
 from numpy.random import uniform
+from io.mouse import click
 from utils.datetime import get_time_and_datetime
 from utils.counter import counter
 
-
-def click(x: int, y: int):
-  pyautogui.mouseDown(
-    x, y,
-    button='left',
-    duration=0.75
-  )
-  pyautogui.sleep(uniform(0.1, 0.3))
-  pyautogui.mouseUp()
 
 def screenshot(filename: str):
   pyautogui.screenshot(f'{filename}.png')
@@ -31,26 +23,26 @@ def main():
   screenshot(initial_datetime) # hour.minute-day.month.year
 
   while keyboard.is_pressed('q') != True:
-    # Get offline rewards
+    # Get offline/temporally rewards
     if pyautogui.pixel(710, 15)[2] == 0:
       pyautogui.click(710, 15, button='left')
       pyautogui.sleep(uniform(0.1, 0.3))
 
     # Check if the portal is available
-    # if pyautogui.pixel(1240, 90)[2] == 153:
-    #   # click in the portal icon
-    #   pyautogui.click(1240, 90)
-    #   pyautogui.sleep(uniform(0.1, 0.3))
-    #   # press "yes"
-    #   pyautogui.click(580, 590)
-    #   pyautogui.sleep(uniform(0.5, 1))
+    if pyautogui.pixel(1240, 90)[2] == 153:
+      # click in the portal icon
+      pyautogui.click(1240, 90)
+      pyautogui.sleep(uniform(0.1, 0.3))
+      # press "yes"
+      pyautogui.click(580, 590)
+      pyautogui.sleep(uniform(0.5, 1))
 
     # Sprint
     if pyautogui.pixel(100, 630)[2] == 155:
       pyautogui.click(100, 630, button='left')
 
     # Jump and shoot with bow
-    click(650, 380)
+    click(650, 380, uniform(0.1, 0.3))
     counter.add_counter()
 
   end_time, end_datetime = get_time_and_datetime()
