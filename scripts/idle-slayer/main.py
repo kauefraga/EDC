@@ -21,6 +21,7 @@ def screenshot(filename: str):
   pyautogui.screenshot(f'{filename}.png')
 
 def main():
+  initial_execution_time = time.time()
   initial_time, initial_datetime = get_time_and_datetime()
 
   print('[script] The program is running... -', initial_time)
@@ -58,6 +59,7 @@ def main():
 
   print('[script] The program has finished -', end_time)
   print(Fore.LIGHTBLACK_EX + '---------------------------------------------' + Style.RESET_ALL)
+  print(f'Time running: {Fore.GREEN}{round(time.time() - initial_execution_time, 3)}s')
 
 
 if __name__ == '__main__':
@@ -65,8 +67,4 @@ if __name__ == '__main__':
   pyautogui.PAUSE = 0.1 # delay after all the commands
   just_fix_windows_console() # colorama
 
-  initial_time = time.time()
-
   main()
-
-  print(f'Time running: {Fore.GREEN}{round(time.time() - initial_time, 3)}s')
