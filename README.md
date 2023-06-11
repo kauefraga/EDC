@@ -30,18 +30,18 @@
 ## ✨ Features
 
 - **Scripts**
-  - [idle slayer](scripts/idle-slayer) - Play away from keyboard.
+  - [idle slayer](https://github.com/kauefraga/auto-idle-slayer) - Mover to other repository!
 - **Net Tools**
-  - [get-ip.bat](https://github.com/kauefraga/EDC/tree/main/nettools/get-ip.bat) - Get IP address of current device.
-  - [get-ip.ps1](https://github.com/kauefraga/EDC/tree/main/nettools/get-ip.ps1) - The same as above but with pwsh.
+  - [get-ip.bat](nettools/get-ip.bat) - Get IP address of current device.
+  - [get-ip.ps1](nettools/get-ip.ps1) - The same as above but with pwsh.
 - **Trolls**
-  - [infinite-dirs.bat](https://github.com/kauefraga/EDC/tree/main/trolls/infinite-dirs.bat) - Create infinite directories at current directory.
-  - [recursive-dirs.bat](https://github.com/kauefraga/EDC/tree/main/trolls/recursive-dirs.bat) - Create a directory that contains another directory that...
-  - [spam-box-messages.bat](https://github.com/kauefraga/EDC/tree/main/trolls/spam-box-messages.bat) - Create a lot of box messages on screen.
+  - [infinite-dirs.bat](trolls/infinite-dirs.bat) - Create infinite directories at current directory.
+  - [recursive-dirs.bat](trolls/recursive-dirs.bat) - Create a directory that contains another directory that...
+  - [spam-box-messages.bat](trolls/spam-box-messages.bat) - Create a lot of box messages on screen.
 - **Utils**
-  - [encrypt-files.py](https://github.com/kauefraga/EDC/tree/main/utils/encrypt-files.py) - Encrypt files like a ransomware.
-  - [decrypt.py](https://github.com/kauefraga/EDC/tree/main/utils/decrypt.py) - Decrypt files encrypted.
-  - [win-setup.ps1](https://github.com/kauefraga/EDC/tree/main/utils/win-setup.ps1) - Script to set up my workspace.
+  - [encrypt-files.py](utils/encrypt-files.py) - Encrypt files like a ransomware.
+  - [decrypt.py](utils/decrypt.py) - Decrypt files encrypted.
+  - [win-setup.ps1](utils/win-setup.ps1) - Script to set up my workspace.
 
 ## ⬇️ How to prepare to run the scripts
 
